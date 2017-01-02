@@ -228,22 +228,9 @@
         return unitFlags;
     }
     else if ([interval isEqualToString:@"second"]) {
-UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NON-9" 
-                                                  message:@"SECOND"
-                                                 delegate:nil
-                                        cancelButtonTitle:@"OK" 
-                                        otherButtonTitles:nil];
-[alert show];
-    
         return NSCalendarUnitSecond;
     }
     else if ([interval isEqualToString:@"minute"]) {
-UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NON-9" 
-                                                  message:@"MINUTE"
-                                                 delegate:nil
-                                        cancelButtonTitle:@"OK" 
-                                        otherButtonTitles:nil];
-[alert show];
         return NSCalendarUnitMinute;
     }
     else if ([interval isEqualToString:@"hour"]) {
