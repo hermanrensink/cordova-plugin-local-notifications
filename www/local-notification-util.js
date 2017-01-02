@@ -180,6 +180,7 @@ exports.convertProperties = function (options) {
             warning += 'month, year on iOS.';
             console.warn(warning);
         }
+alert("HR: every=" + options.every);
     }
 
     return options;

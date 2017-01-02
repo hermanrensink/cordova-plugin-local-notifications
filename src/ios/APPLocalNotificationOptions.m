@@ -222,32 +222,28 @@
 - (NSCalendarUnit) repeatInterval
 {
     NSString* interval = [dict objectForKey:@"every"];
-    NSCalendarUnit unitFlags = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond;
-
+    NSCalendarUnit unitFlags = NSCalendarUnitDay;
 
     if ([self stringIsNullOrEmpty:interval]) {
         return unitFlags;
     }
     else if ([interval isEqualToString:@"second"]) {
-        return NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay;
+        return NSCalendarUnitSecond;
     }
     else if ([interval isEqualToString:@"minute"]) {
-        return NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitSecond;
+        return NSCalendarUnitMinute;
     }
     else if ([interval isEqualToString:@"hour"]) {
-        return NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitMinute;
+        return NSCalendarUnitHour;
     }
     else if ([interval isEqualToString:@"day"]) {
-        return NSCalendarUnitHour|NSCalendarUnitMinute;
-    }
-    else if ([interval isEqualToString:@"week"]) {
-        return NSCalendarUnitWeekday|NSCalendarUnitHour|NSCalendarUnitMinute;
+        return NSCalendarUnitDay;
     }
     else if ([interval isEqualToString:@"month"]) {
-        return NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute;
+        return NSCalendarUnitMonth;
     }
     else if ([interval isEqualToString:@"year"]) {
-        return NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute;
+        return NSCalendarUnitYear;
     }
 
     return unitFlags;

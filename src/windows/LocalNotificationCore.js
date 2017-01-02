@@ -52,7 +52,10 @@ proxy.core = {
      *      'schedule' or 'update'
      */
     schedule: function (notifications) {
-        var triggerFn = function (notification) {
+        
+alert('HR: schedule notification');
+
+       var triggerFn = function (notification) {
             this.updateBadge(notification.badge);
             this.fireEvent('trigger', notification);
         };
