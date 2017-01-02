@@ -234,7 +234,6 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NON-9"
                                         cancelButtonTitle:@"OK" 
                                         otherButtonTitles:nil];
 [alert show];
-[alert release];
     
         return NSCalendarUnitSecond;
     }
@@ -245,7 +244,6 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"NON-9"
                                         cancelButtonTitle:@"OK" 
                                         otherButtonTitles:nil];
 [alert show];
-[alert release];
         return NSCalendarUnitMinute;
     }
     else if ([interval isEqualToString:@"hour"]) {

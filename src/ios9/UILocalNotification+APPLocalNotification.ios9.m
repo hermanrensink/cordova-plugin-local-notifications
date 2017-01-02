@@ -114,13 +114,13 @@ NSInteger const APPLocalNotificationTypeTriggered = 2;
 {
     switch (self.repeatInterval) {
         case NSCalendarUnitMinute:
-UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message" 
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"IOS9" 
                                                   message:@"MINUTE"
                                                  delegate:nil
                                         cancelButtonTitle:@"OK" 
                                         otherButtonTitles:nil];
 [alert show];
-[alert release];            return 60;
+            return 60;
 
         case NSCalendarUnitHour:
             return 3600;
@@ -134,13 +134,12 @@ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message"
             return 86400;
 
         default:
-UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message" 
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"IOS9" 
                                                   message:@"DEFAULT"
                                                  delegate:nil
                                         cancelButtonTitle:@"OK" 
                                         otherButtonTitles:nil];
 [alert show];
-[alert release];
             return 1;
     }
 }
