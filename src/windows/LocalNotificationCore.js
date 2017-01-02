@@ -53,8 +53,6 @@ proxy.core = {
      */
     schedule: function (notifications) {
         
-alert('HR: schedule notification');
-
        var triggerFn = function (notification) {
             this.updateBadge(notification.badge);
             this.fireEvent('trigger', notification);
@@ -85,8 +83,6 @@ alert('HR: schedule notification');
             triggerTime = new Date((options.at * 1000)),
             now = new Date().getTime(),
             toast;
-
-alert('HR interval = ' + interval);
 
         if (triggerTime <= now) {
             triggerTime = new Date(now + 10);

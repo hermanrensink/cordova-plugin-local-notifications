@@ -73,8 +73,6 @@ exports.schedule = function (msgs, callback, scope, args) {
         var notifications = Array.isArray(msgs) ? msgs : [msgs];
 
         for (var i = 0; i < notifications.length; i++) {
-alert('HR exports.schedule');
-
             var notification = notifications[i];
 
             this.mergeWithDefaults(notification);
