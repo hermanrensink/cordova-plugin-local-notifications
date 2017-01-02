@@ -117,9 +117,11 @@ NSInteger const APPLocalNotificationTypeTriggered = 2;
             return 60;
 
         case NSCalendarUnitHour:
-            return 60000;
+            return 3600;
 
         case NSCalendarUnitDay:
+            return 86400;
+            
         case NSCalendarUnitWeekOfYear:
         case NSCalendarUnitMonth:
         case NSCalendarUnitYear:

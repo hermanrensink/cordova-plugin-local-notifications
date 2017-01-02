@@ -83,6 +83,8 @@ proxy.core = {
             now = new Date().getTime(),
             toast;
 
+alert('HR interval = ' + interval);
+
         if (triggerTime <= now) {
             triggerTime = new Date(now + 10);
         }
